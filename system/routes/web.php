@@ -80,12 +80,9 @@ Route::get('about', [ClientController::class, 'showabout'] );
 Route::get('contact', [ClientController::class, 'showcontact'] );
 Route::get('produkshop', [ClientController::class, 'showprodukshop'] );
 Route::get('shop', [ClientController::class, 'showshop'] );
-// Route::get('cart/{produk}', [ClientController::class, 'showcart'] );
 Route::post('shop/filter', [ClientController::class, 'filter']);
 Route::post('shop/filter2', [ClientController::class, 'filter2']);
 Route::get('produkshop/{produk}', [ClientController::class, 'showprodukshop']);
-// Route::get('checkout', [ClientController::class, 'showCheckout'] );
-// Route::get('checkout/{produk}', [ClientController::class, 'showCheckout'] );
 
 
 // alamat

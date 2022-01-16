@@ -9,8 +9,6 @@ use App\Models\Cart;
 class ClientController extends Controller
 {
 
-
-
   function showshop()
   {
     
@@ -18,19 +16,6 @@ class ClientController extends Controller
     return view('client.shop', $data);
   }
 
-  //  function showCheckout()
-  // {
-    
-  //   $data['list_produk'] = Product::paginate(1);
-  //   return view('client.checkout', $data);
-  // }
-
-  // function showkeranjang()
-  // {
-    
-  //   $data['list_produk'] = Product::paginate(1);
-  //   return view('client.keranjang', $data);
-  // }
 
   function filter()
   {
@@ -40,24 +25,6 @@ class ClientController extends Controller
 
     return view('client.shop', $data);
   }
-
-
-  // function filter2()
-  // {
-  //   $harga_min = request('harga_min');
-  //   $harga_max = request('harga_max');
-  //   $data['harga_min'] = $harga_min;
-  //   $data['harga_max'] = $harga_max;
-
-  //   $data['list_produk'] = Product::whereBetween('harga', [$harga_min, $harga_max])->get();
-  //   return view('client.shop', $data);
-  // }
-
-  //  function showCheckout()
-  // {
-  //   return view('client.checkout');
-  // }
-
 
   function showhome()
   {

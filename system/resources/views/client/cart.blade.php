@@ -54,13 +54,13 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="nama_produk">Nama Produk</label>
-                    <input type="text" name="firtname" class="form-control" placeholder="">
+                    <input type="text" name="nama_produk" class="form-control" placeholder="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="quantity">Quantity</label>
-                    <input type="text" name="lastname" class="form-control" placeholder="">
+                    <input type="text" name="quantity" class="form-control" placeholder="">
                   </div>
                 </div>
                 <div class="w-100"></div>
