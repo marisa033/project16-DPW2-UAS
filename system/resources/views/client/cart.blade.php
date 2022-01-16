@@ -48,18 +48,18 @@
         <div class="card-header">
           <b>Detail Pengiriman<b> 
         </div> <br>
-              <form action="{{url('cart')}}" method="post" >
+              <form action="{{url('cart')}}" method="post" enctype="multipart/form-data">
             @csrf
               <div class="row align-items-end">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="firstname">Nama Produk</label>
+                    <label for="nama_produk">Nama Produk</label>
                     <input type="text" name="firtname" class="form-control" placeholder="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="lastname">Quantity</label>
+                    <label for="quantity">Quantity</label>
                     <input type="text" name="lastname" class="form-control" placeholder="">
                   </div>
                 </div>
