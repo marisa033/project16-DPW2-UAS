@@ -11,12 +11,17 @@ class SettingController extends Controller
 
     public function index()
     {
-        $data = Auth::user();
-        if (Auth::guard('admin')->check()) {
-            $data['user'] = Auth::guard('admin')->user();
-        } else {
-            $data['user'] = Auth::guard('pengguna')->user();
-        }
+
+        $data['user'] = Auth::user();
+
+        // multitable setting
+        // $data = Auth::user();
+        // if (Auth::guard('admin')->check()) {
+        //     $data['user'] = Auth::guard('admin')->user();
+        // } else {
+        //     $data['user'] = Auth::guard('pengguna')->user();
+        // }
+
         return view('admin.setting.index', $data);
     }
 
@@ -25,13 +30,16 @@ class SettingController extends Controller
     public function store(Request $request)
     {
         if (request('current')) {
-            // $user = Auth::user();
+           
+            // multitable setting
 
-            if (Auth::guard('admin')->check()) {
-                $user = Auth::guard('admin')->user();
-            } else {
-                $user = Auth::guard('pengguna')->user();
-            }
+            // if (Auth::guard('admin')->check()) {
+            //     $user = Auth::guard('admin')->user();
+            // } else {
+            //     $user = Auth::guard('pengguna')->user();
+            // }
+
+            $user = Auth::user();
 
             $chek = Hash::check(request('current'), $user->password);
             if ($chek) {
